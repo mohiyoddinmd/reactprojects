@@ -14,6 +14,7 @@ import './App.css';
 import { useSelector } from 'react-redux';
 import GoogleLoginComponent from './GoogleLoginComponent';
 import { GoogleOAuthProvider } from '@react-oauth/google';
+import FacebookLoginComponent from './FacebookLoginComponent';
 
 function App(){  
     const cartItems = useSelector((state) => state.cart);
@@ -24,6 +25,7 @@ function App(){
         <GoogleOAuthProvider clientId="716566590308-qjt3llliu6tbdr3j1u8l6tmd1010at75.apps.googleusercontent.com">
         <GoogleLoginComponent/>
         </GoogleOAuthProvider>
+        <FacebookLoginComponent/>
 
         <BrowserRouter>
             <nav>
